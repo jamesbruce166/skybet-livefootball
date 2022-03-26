@@ -1,5 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
 import { Settings } from '@styled-icons/ionicons-sharp';
+import { Expand } from '@styled-icons/evaicons-solid';
+import { CloseFullscreen } from '@styled-icons/material-rounded';
+
 import { PRIMARY_RED } from '../../variables.styles';
 
 export const Section = styled.div`
@@ -27,7 +31,7 @@ export const TeamText = styled.p`
 	flex: 1;
 	justify-content: center;
 	color: white;
-	font-size: 22px;
+	font-size: 1.6rem;
 	text-align: center;
 
 	:first-child > span {
@@ -41,7 +45,7 @@ export const TeamText = styled.p`
 
 export const TimeLabel = styled.p`
 	color: lightgray;
-	font-size: 14px;
+	font-size: 0.8rem;
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 0;
@@ -49,14 +53,14 @@ export const TimeLabel = styled.p`
 
 export const TimeStarted = styled.p`
 	color: white;
-	font-size: 16px;
+	font-size: 1rem;
 	text-align: center;
 	line-height: 0;
 `;
 
 export const EmptyDataText = styled.p`
 	color: white;
-	font-size: 20px;
+	font-size: 1.2rem;
 	text-align: center;
 	font-weight: 500;
 `;
@@ -68,12 +72,26 @@ export const ControlBar = styled.div`
 	align-items: center;
 `;
 
-export const MenuIcon = styled(Settings)`
-	color: lightgray;
-	width: 25px;
+const Icon = css`
+	color: white;
 
 	& :hover {
 		cursor: pointer;
 		color: #444444;
 	}
+`;
+
+export const MenuIcon = styled(Settings)`
+	${Icon}
+	width: 25px;
+`;
+
+export const MinimiseIcon = styled(Expand)`
+	${Icon}
+	width: 30px;
+`;
+
+export const MaximiseIcon = styled(CloseFullscreen)`
+	${Icon}
+	width: 30px;
 `;

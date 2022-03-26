@@ -17,6 +17,8 @@ import {
 	EmptyDataText,
 	ControlBar,
 	MenuIcon,
+	MinimiseIcon,
+	MaximiseIcon,
 } from './eventPanel.styles';
 import MarketTabs from '../MarketTabs';
 
@@ -30,8 +32,11 @@ const EventPanel = () => {
 	};
 
 	const [oddsDisplay, setOddsDisplay] = useState(displayOptions.DECIMAL);
+	const [isMinimised, setIsMinimised] = useState(true);
+
 	const { selectedEvent } = useEvents();
 
+	const minimiseHandler = () => setIsMinimised(!isMinimised);
 	const radioChangeHandler = (e) => setOddsDisplay(e.value);
 
 	const EmptyData = () => {
@@ -67,11 +72,13 @@ const EventPanel = () => {
 					<TimeLabel>Started At</TimeLabel>
 					<TimeStarted>{renderStartTime(startTime)}</TimeStarted>
 				</GameBox>
-				<MarketTabs
-					markets={markets}
-					oddsDisplay={oddsDisplay}
-					displayOptions={displayOptions}
-				/>
+				{!isMinimised && (
+					<MarketTabs
+						markets={markets}
+						oddsDisplay={oddsDisplay}
+						displayOptions={displayOptions}
+					/>
+				)}
 			</>
 		);
 	};
@@ -101,6 +108,9 @@ const EventPanel = () => {
 						</MenuRadioGroup>
 					</SubMenu>
 				</Menu>
+				<a onClick={minimiseHandler}>
+					{isMinimised ? <MinimiseIcon /> : <MaximiseIcon />}
+				</a>
 			</ControlBar>
 			{selectedEvent ? <SelectedEventData /> : <EmptyData />}
 		</Section>
