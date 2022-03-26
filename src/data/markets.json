@@ -1,0 +1,21 @@
+{
+	"market": {
+		"marketId": 93649179,
+		"eventId": 21249939,
+		"name": "Both Teams To Score",
+		"displayOrder": -32499,
+		"type": "standard",
+		"status": {
+			"active": true,
+			"resulted": false,
+			"cashoutable": true,
+			"displayable": true,
+			"suspended": false,
+			"noExtraTime": false,
+			"live": true
+		},
+		"liabilities": { "livePriceLimit": 2500 },
+		"spAvail": false,
+		"outcomes": [367528211, 367528215]
+	}
+}

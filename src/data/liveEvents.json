@@ -1,0 +1,728 @@
+{
+	"type": "LIVE_EVENTS_DATA",
+	"data": [
+		{
+			"eventId": 21249939,
+			"name": "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+			"displayOrder": -1000,
+			"sort": "MTCH",
+			"linkedEventId": 21228740,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10005942,
+			"linkedEventTypeName": "Chinese Super League",
+			"startTime": "2017-09-19T11:35:23.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Shanghai Shenhua",
+					"position": "home"
+				},
+				{
+					"name": "Shandong Luneng Taishan",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649849]
+		},
+		{
+			"eventId": 21249937,
+			"name": "Home United 0 v 1 Albirex Niigata FC",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21249693,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10005913,
+			"linkedEventTypeName": "Singapore S League",
+			"startTime": "2017-09-19T11:29:23.000Z",
+			"scores": {
+				"home": 0,
+				"away": 1
+			},
+			"competitors": [
+				{
+					"name": "Home United",
+					"position": "home"
+				},
+				{
+					"name": "Albirex Niigata FC",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649011]
+		},
+		{
+			"eventId": 21249944,
+			"name": "Kuching FA 0 v 1 UKM FC",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:16:51.000Z",
+			"scores": {
+				"home": 0,
+				"away": 1
+			},
+			"competitors": [
+				{
+					"name": "Kuching FA",
+					"position": "home"
+				},
+				{
+					"name": "UKM FC",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649434]
+		},
+		{
+			"eventId": 21249945,
+			"name": "Payasspor 1 v 0 Amed Sportif Faaliyetler",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21241593,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10006356,
+			"linkedEventTypeName": "Turkish Cup",
+			"startTime": "2017-09-19T11:59:59.000Z",
+			"scores": {
+				"home": 1,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Payasspor",
+					"position": "home"
+				},
+				{
+					"name": "Amed Sportif Faaliyetler",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650155]
+		},
+		{
+			"eventId": 21249946,
+			"name": "Maccabi Ironi Kiryat Ata 0 v 0 Hapoel Shfaram",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:30:59.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Maccabi Ironi Kiryat Ata",
+					"position": "home"
+				},
+				{
+					"name": "Hapoel Shfaram",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649360]
+		},
+		{
+			"eventId": 21249949,
+			"name": "Bandirmaspor 0 v 0 Çorum Belediyespor",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21241922,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10006356,
+			"linkedEventTypeName": "Turkish Cup",
+			"startTime": "2017-09-19T12:29:07.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Bandirmaspor",
+					"position": "home"
+				},
+				{
+					"name": "Çorum Belediyespor",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650016]
+		},
+		{
+			"eventId": 21249950,
+			"name": "Kaspian Qazvin 0 v 0 Hef Semnan",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:35:47.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Kaspian Qazvin",
+					"position": "home"
+				},
+				{
+					"name": "Hef Semnan",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650051]
+		},
+		{
+			"eventId": 21249951,
+			"name": "Bodrum Belediyesi Bodrumspor 0 v 2 Gaskispor Gaziantep",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21241920,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10006356,
+			"linkedEventTypeName": "Turkish Cup",
+			"startTime": "2017-09-19T12:32:19.000Z",
+			"scores": {
+				"home": 0,
+				"away": 2
+			},
+			"competitors": [
+				{
+					"name": "Bodrum Belediyesi Bodrumspor",
+					"position": "home"
+				},
+				{
+					"name": "Gaskispor Gaziantep",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650079]
+		},
+		{
+			"eventId": 21249952,
+			"name": "Terengganu FA 0 v 0 Felcra FC",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:47:15.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Terengganu FA",
+					"position": "home"
+				},
+				{
+					"name": "Felcra FC",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650072]
+		},
+		{
+			"eventId": 21249953,
+			"name": "Muglaspor 0 v 1 Etimesgut Belediyespor",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21241919,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10006356,
+			"linkedEventTypeName": "Turkish Cup",
+			"startTime": "2017-09-19T12:29:18.000Z",
+			"scores": {
+				"home": 0,
+				"away": 1
+			},
+			"competitors": [
+				{
+					"name": "Muglaspor",
+					"position": "home"
+				},
+				{
+					"name": "Etimesgut Belediyespor",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650166]
+		},
+		{
+			"eventId": 21249954,
+			"name": "Kirklarelispor 0 v 1 Nigde Belediyespor",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21241923,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10006356,
+			"linkedEventTypeName": "Turkish Cup",
+			"startTime": "2017-09-19T12:28:35.000Z",
+			"scores": {
+				"home": 0,
+				"away": 1
+			},
+			"competitors": [
+				{
+					"name": "Kirklarelispor",
+					"position": "home"
+				},
+				{
+					"name": "Nigde Belediyespor",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650230]
+		},
+		{
+			"eventId": 21249955,
+			"name": "MOF FC 0 v 0 Sime Darby FC",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:44:37.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "MOF FC",
+					"position": "home"
+				},
+				{
+					"name": "Sime Darby FC",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650114]
+		},
+		{
+			"eventId": 21249956,
+			"name": "Shahrdari Hamedan 0 v 0 Khoosheh Talai",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:30:22.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Shahrdari Hamedan",
+					"position": "home"
+				},
+				{
+					"name": "Khoosheh Talai",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93650205]
+		},
+		{
+			"eventId": 21250056,
+			"name": "Yeni Menemen Belediyespor 0 v 1 Gençlerbirligi SK",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:27:29.000Z",
+			"scores": {
+				"home": 0,
+				"away": 1
+			},
+			"competitors": [
+				{
+					"name": "Yeni Menemen Belediyespor",
+					"position": "home"
+				},
+				{
+					"name": "Gençlerbirligi SK",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93745088]
+		},
+		{
+			"eventId": 21249940,
+			"name": "Wigan Athletic Reserves 1 v 0 Fleetwood Town Reserves",
+			"displayOrder": 160,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:01:10.000Z",
+			"scores": {
+				"home": 1,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Wigan Athletic Reserves",
+					"position": "home"
+				},
+				{
+					"name": "Fleetwood Town Reserves",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649215]
+		},
+		{
+			"eventId": 21249941,
+			"name": "Barnet Reserves 0 v 0 Southend United Reserves",
+			"displayOrder": 160,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T11:59:36.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Barnet Reserves",
+					"position": "home"
+				},
+				{
+					"name": "Southend United Reserves",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649250]
+		},
+		{
+			"eventId": 21250047,
+			"name": "Burton Albion (Reserves) 0 v 3 Mansfield Town FC (Reserves)",
+			"displayOrder": 160,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T11:58:18.000Z",
+			"scores": {
+				"home": 0,
+				"away": 3
+			},
+			"competitors": [
+				{
+					"name": "Burton Albion (Reserves)",
+					"position": "home"
+				},
+				{
+					"name": "Mansfield Town FC (Reserves)",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93778225]
+		},
+		{
+			"eventId": 21249943,
+			"name": "Guria Lanchkhuti U19 2 v 0 Meshakhte Tkibuli U19",
+			"displayOrder": 180,
+			"sort": "MTCH",
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"startTime": "2017-09-19T12:23:47.000Z",
+			"scores": {
+				"home": 2,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Guria Lanchkhuti U19",
+					"position": "home"
+				},
+				{
+					"name": "Meshakhte Tkibuli U19",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649415]
+		}
+	]
+}
