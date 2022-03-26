@@ -1,3 +1,8 @@
 {
-	"empty-data-message": "There are no games to display at the present time."
+	"empty-data-message": "There are no games to display at the present time.",
+	"menu-odds-label": "Odds Format",
+	"format-options": {
+		"decimal": "Decimal (1.5)",
+		"fraction": "Fraction (1/2)"
+	}
 }

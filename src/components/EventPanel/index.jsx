@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-
+import {
+	Menu,
+	MenuItem,
+	SubMenu,
+	MenuHeader,
+	MenuRadioGroup,
+} from '@szhsin/react-menu';
+import '@szhsin/react-menu/dist/index.css';
 import {
 	Section,
 	GameBox,
@@ -15,13 +22,23 @@ import {
 	Tab,
 	Content,
 	EmptyDataText,
+	ControlBar,
+	MenuIcon,
 } from './eventPanel.styles';
 import displayData from './data';
 
 import { useEvents } from '../../contexts/EventProvider';
 
 const EventPanel = () => {
+	const displayOptions = {
+		FRACTION: displayData['format-options'].fraction,
+		DECIMAL: displayData['format-options'].decimal,
+	};
+
+	const [oddsDisplay, setOddsDisplay] = useState(displayOptions.DECIMAL);
 	const { selectedEvent } = useEvents();
+
+	const radioChangeHandler = (e) => setOddsDisplay(e.value);
 
 	const EmptyData = () => {
 		return (
@@ -85,6 +102,30 @@ const EventPanel = () => {
 
 	return (
 		<Section data-testid='selected-event'>
+			<ControlBar>
+				<Menu menuButton={<MenuIcon />}>
+					<MenuHeader>Display Settings</MenuHeader>
+					<SubMenu label={displayData['menu-odds-label']}>
+						<MenuRadioGroup
+							value={oddsDisplay}
+							onRadioChange={radioChangeHandler}
+						>
+							<MenuItem
+								type='radio'
+								value={displayOptions.FRACTION}
+							>
+								{displayData['format-options'].fraction}
+							</MenuItem>
+							<MenuItem
+								type='radio'
+								value={displayOptions.DECIMAL}
+							>
+								{displayData['format-options'].decimal}
+							</MenuItem>
+						</MenuRadioGroup>
+					</SubMenu>
+				</Menu>
+			</ControlBar>
 			{selectedEvent ? <SelectedEventData /> : <EmptyData />}
 		</Section>
 	);

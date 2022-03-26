@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Settings } from '@styled-icons/ionicons-sharp';
 import { PRIMARY_RED } from '../../variables.styles';
 
 export const Section = styled.div`
@@ -123,4 +124,21 @@ export const EmptyDataText = styled.p`
 	font-size: 20px;
 	text-align: center;
 	font-weight: 500;
+`;
+
+export const ControlBar = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+`;
+
+export const MenuIcon = styled(Settings)`
+	color: lightgray;
+	width: 25px;
+
+	& :hover {
+		cursor: pointer;
+		color: #444444;
+	}
 `;
