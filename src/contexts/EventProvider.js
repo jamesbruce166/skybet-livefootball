@@ -25,7 +25,10 @@ export function EventProvider({ children }) {
 		const { type } = data;
 		switch (type) {
 			case 'LIVE_EVENTS_DATA':
+				const firstGame = data.data && data.data[0];
+
 				setEvents(data);
+				setSelectedEvent(firstGame);
 				break;
 			case 'ERROR':
 				setError(data);
