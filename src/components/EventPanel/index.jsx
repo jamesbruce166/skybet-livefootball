@@ -19,6 +19,7 @@ import {
 	MenuIcon,
 	MinimiseIcon,
 	MaximiseIcon,
+	Clickable,
 } from './eventPanel.styles';
 import MarketTabs from '../MarketTabs';
 
@@ -108,9 +109,9 @@ const EventPanel = () => {
 						</MenuRadioGroup>
 					</SubMenu>
 				</Menu>
-				<a onClick={minimiseHandler}>
+				<Clickable onClick={minimiseHandler}>
 					{isMinimised ? <MinimiseIcon /> : <MaximiseIcon />}
-				</a>
+				</Clickable>
 			</ControlBar>
 			{selectedEvent ? <SelectedEventData /> : <EmptyData />}
 		</Section>

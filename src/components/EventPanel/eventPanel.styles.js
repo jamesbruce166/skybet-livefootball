@@ -95,3 +95,8 @@ export const MaximiseIcon = styled(CloseFullscreen)`
 	${Icon}
 	width: 30px;
 `;
+
+export const Clickable = styled.button`
+	background: transparent;
+	border: none;
+`;
