@@ -14,19 +14,13 @@ import {
 	TeamText,
 	TimeLabel,
 	TimeStarted,
-	MarketContainer,
-	Outcome,
-	OutcomeName,
-	OutcomePrice,
-	Tabs,
-	Tab,
-	Content,
 	EmptyDataText,
 	ControlBar,
 	MenuIcon,
 } from './eventPanel.styles';
-import displayData from './data';
+import MarketTabs from '../MarketTabs';
 
+import displayData from './data';
 import { useEvents } from '../../contexts/EventProvider';
 
 const EventPanel = () => {
@@ -53,15 +47,6 @@ const EventPanel = () => {
 		const { name: awayTeamName } = competitors[1];
 		const { home, away } = scores;
 
-		const [active, setActive] = useState(0);
-
-		const tabHandler = (e) => {
-			const index = parseInt(e.target.id, 0);
-			if (index !== active) {
-				setActive(index);
-			}
-		};
-
 		const renderStartTime = (d) => {
 			const date = new Date(d);
 			const hour = date.getHours();
@@ -82,20 +67,11 @@ const EventPanel = () => {
 					<TimeLabel>Started At</TimeLabel>
 					<TimeStarted>{renderStartTime(startTime)}</TimeStarted>
 				</GameBox>
-				<MarketContainer isMinimised>
-					<Tabs>
-						<Tab onClick={tabHandler} active={active === 0} id={0}>
-							Both Teams To Score
-						</Tab>
-					</Tabs>
-
-					<Content active={active === 0}>
-						<Outcome>
-							<OutcomeName>Yes</OutcomeName>
-							<OutcomePrice>1/7</OutcomePrice>
-						</Outcome>
-					</Content>
-				</MarketContainer>
+				<MarketTabs
+					markets={markets}
+					oddsDisplay={oddsDisplay}
+					displayOptions={displayOptions}
+				/>
 			</>
 		);
 	};
