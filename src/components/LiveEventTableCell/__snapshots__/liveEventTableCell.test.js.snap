@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bczRLJ kyfMpH"
+  data-testid="event-cell"
+>
+  <div
+    className="sc-gsnTZi jfffIx"
+  >
+    <div
+      className="sc-dkzDqf caZALy"
+    >
+      <p
+        className="sc-hKMtZM cGURqS"
+      >
+        Shanghai Shenhua
+      </p>
+      <p
+        className="sc-eCYdqJ bSsXdt"
+      >
+        0
+      </p>
+    </div>
+    <div
+      className="sc-dkzDqf caZALy"
+    >
+      <p
+        className="sc-hKMtZM cGURqS"
+      >
+        Shandong Luneng Taishan
+      </p>
+      <p
+        className="sc-eCYdqJ bSsXdt"
+      >
+        0
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-jSMfEi fnIhHY"
+  >
+    <div
+      className="sc-iBkjds leGKiQ"
+    >
+      LIVE
+    </div>
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 lbJwfL sc-gKXOVf clsDmZ"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;

@@ -8,11 +8,10 @@ import {
 	StatusBox,
 	Chevron,
 } from './liveEventTableCell.styles';
+import { LiveBadge } from '../common/common.styles';
 
-import data from '../../data/liveEvents.json';
-
-const LiveEventTableCell = () => {
-	const { competitors, scores, status } = data.data[0];
+const LiveEventTableCell = ({ event }) => {
+	const { competitors, scores, status } = event;
 
 	const { name: homeTeamName } = competitors[0];
 	const { name: awayTeamName } = competitors[1];
@@ -20,7 +19,7 @@ const LiveEventTableCell = () => {
 	const { live } = status;
 
 	return (
-		<CellContent>
+		<CellContent data-testid='event-cell'>
 			<CompetitorBox>
 				<SubRow>
 					<TeamNameText>{homeTeamName}</TeamNameText>
@@ -32,7 +31,7 @@ const LiveEventTableCell = () => {
 				</SubRow>
 			</CompetitorBox>
 			<StatusBox>
-				{live && <p>LIVE</p>}
+				{live && <LiveBadge>LIVE</LiveBadge>}
 				<Chevron />
 			</StatusBox>
 		</CellContent>
