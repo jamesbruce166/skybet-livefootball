@@ -9,7 +9,7 @@ import { PRIMARY_RED } from '../../variables.styles';
 export const Section = styled.div`
 	background: ${PRIMARY_RED};
 	min-height: 20vh;
-	padding: 5%;
+	padding: 3%;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
