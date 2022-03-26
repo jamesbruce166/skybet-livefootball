@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ChevronRight } from '@styled-icons/bootstrap';
+import { SECONDARY_DARK } from '../../variables.styles';
 
 export const CellContent = styled.div`
 	display: flex;
@@ -8,7 +9,7 @@ export const CellContent = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 10px 25px;
-	background: rgb(23, 34, 59);
+	background: ${SECONDARY_DARK};
 	margin-top: 12px;
 	border-radius: 8px;
 `;
