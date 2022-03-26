@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
 	CellContent,
 	CompetitorBox,
@@ -41,6 +43,10 @@ const LiveEventTableCell = ({ event }) => {
 			</StatusBox>
 		</CellContent>
 	);
+};
+
+LiveEventTableCell.propTypes = {
+	event: PropTypes.object.isRequired,
 };
 
 export default LiveEventTableCell;
