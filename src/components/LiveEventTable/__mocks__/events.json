@@ -1,0 +1,89 @@
+{
+	"type": "LIVE_EVENTS_DATA",
+	"data": [
+		{
+			"eventId": 21249939,
+			"name": "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+			"displayOrder": -1000,
+			"sort": "MTCH",
+			"linkedEventId": 21228740,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10005942,
+			"linkedEventTypeName": "Chinese Super League",
+			"startTime": "2017-09-19T11:35:23.000Z",
+			"scores": {
+				"home": 0,
+				"away": 0
+			},
+			"competitors": [
+				{
+					"name": "Shanghai Shenhua",
+					"position": "home"
+				},
+				{
+					"name": "Shandong Luneng Taishan",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649849]
+		},
+		{
+			"eventId": 21249937,
+			"name": "Home United 0 v 1 Albirex Niigata FC",
+			"displayOrder": 100,
+			"sort": "MTCH",
+			"linkedEventId": 21249693,
+			"classId": 5,
+			"className": "Football",
+			"typeId": 10003971,
+			"typeName": "Football Live",
+			"linkedEventTypeId": 10005913,
+			"linkedEventTypeName": "Singapore S League",
+			"startTime": "2017-09-19T11:29:23.000Z",
+			"scores": {
+				"home": 0,
+				"away": 1
+			},
+			"competitors": [
+				{
+					"name": "Home United",
+					"position": "home"
+				},
+				{
+					"name": "Albirex Niigata FC",
+					"position": "away"
+				}
+			],
+			"status": {
+				"active": true,
+				"started": true,
+				"live": true,
+				"resulted": false,
+				"finished": false,
+				"cashoutable": true,
+				"displayable": true,
+				"suspended": false,
+				"requestabet": false
+			},
+			"boostCount": 0,
+			"superBoostCount": 0,
+			"markets": [93649011]
+		}
+	]
+}
