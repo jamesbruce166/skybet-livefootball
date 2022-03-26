@@ -29,7 +29,7 @@ export const SubRow = styled.div`
 
 export const TeamNameText = styled.p`
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 0.9rem;
 	font-weight: 300;
 	line-height: 0;
 	letter-spacing: 1px;
@@ -37,7 +37,7 @@ export const TeamNameText = styled.p`
 
 export const ScoreText = styled.p`
 	color: rgb(255, 30, 60);
-	font-size: 14px;
+	font-size: 0.9rem;
 	font-weight: 600;
 	line-height: 0;
 `;

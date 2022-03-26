@@ -19,7 +19,7 @@ export const Outcome = styled.div`
 
 export const OutcomeName = styled.p`
 	color: lightgray;
-	font-size: 16px;
+	font-size: 1rem;
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 0;
@@ -27,7 +27,7 @@ export const OutcomeName = styled.p`
 
 export const OutcomePrice = styled.p`
 	color: white;
-	font-size: 14px;
+	font-size: 0.9rem;
 	text-align: center;
 `;
 

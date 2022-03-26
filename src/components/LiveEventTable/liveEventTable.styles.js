@@ -32,7 +32,7 @@ export const EmptyTableIcon = styled(Football)`
 
 export const EmptyTableMessage = styled.p`
 	color: white;
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-weight: 100;
 	text-align: center;
 `;
