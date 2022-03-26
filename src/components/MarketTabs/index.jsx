@@ -42,7 +42,7 @@ const MarketTabs = ({ markets, oddsDisplay, displayOptions }) => {
 		return () => {
 			socket.removeEventListener('message', onMessage);
 		};
-	}, [socket, marketId]);
+	}, [socket, marketId, onMessage]);
 
 	useEffect(() => {
 		if (!market) return;
@@ -54,7 +54,7 @@ const MarketTabs = ({ markets, oddsDisplay, displayOptions }) => {
 		return () => {
 			socket.removeEventListener('message', onMessage);
 		};
-	}, [socket, market]);
+	}, [socket, market, onMessage]);
 
 	const tabHandler = (e) => {
 		const index = parseInt(e.target.id, 0);
@@ -84,7 +84,7 @@ const MarketTabs = ({ markets, oddsDisplay, displayOptions }) => {
 				<Outcome>
 					<OutcomeName>{name}</OutcomeName>
 					<OutcomePrice>
-						{oddsDisplay == displayOptions.DECIMAL
+						{oddsDisplay === displayOptions.DECIMAL
 							? decimal
 							: `${num} / ${den}`}
 					</OutcomePrice>
