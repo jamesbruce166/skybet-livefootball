@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bczRLJ fyACZu"
+  data-testid="selected-event"
+>
+  <div
+    className="sc-gsnTZi hyipTS"
+  >
+    <div
+      className="sc-dkzDqf lnrjYG"
+    >
+      <p
+        className="sc-hKMtZM hrJmKY"
+      >
+        Shanghai Shenhua
+      </p>
+      <p
+        className="sc-hKMtZM hrJmKY"
+      >
+        0
+         - 
+        0
+      </p>
+      <p
+        className="sc-hKMtZM hrJmKY"
+      >
+        Shandong Luneng Taishan
+      </p>
+    </div>
+    <p
+      className="sc-eCYdqJ kbJpPx"
+    >
+      Started At
+    </p>
+    <p
+      className="sc-jSMfEi hhplpF"
+    >
+      12:35
+    </p>
+  </div>
+  <div
+    className="sc-gKXOVf ivpFhr"
+  >
+    <div
+      className="sc-jqUVSM ciufeS"
+    >
+      <button
+        className="sc-kDDrLX cLQqEh"
+        id={0}
+        onClick={[Function]}
+      >
+        Both Teams To Score
+      </button>
+    </div>
+    <div
+      className="sc-iqcoie bHHgxt"
+    >
+      <div
+        className="sc-iBkjds kQyGx"
+      >
+        <p
+          className="sc-ftvSup eFDmGl"
+        >
+          Yes
+        </p>
+        <p
+          className="sc-papXJ iFPmSQ"
+        >
+          1/7
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
