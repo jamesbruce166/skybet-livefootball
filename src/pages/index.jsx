@@ -3,14 +3,17 @@ import React from 'react';
 import LiveEventTable from '../components/LiveEventTable';
 import EventPanel from '../components/EventPanel';
 
-import events from '../data/liveEvents.json';
+import { SocketProvider } from '../contexts/SocketProvider';
+import { EventProvider } from '../contexts/EventProvider';
 
 const Home = () => {
 	return (
-		<>
-			<EventPanel selectedEvent={events.data[0]} />
-			<LiveEventTable events={events} />
-		</>
+		<SocketProvider>
+			<EventProvider>
+				<EventPanel />
+				<LiveEventTable />
+			</EventProvider>
+		</SocketProvider>
 	);
 };
 

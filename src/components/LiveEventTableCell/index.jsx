@@ -10,8 +10,13 @@ import {
 } from './liveEventTableCell.styles';
 import { LiveBadge } from '../common/common.styles';
 
+import { useEvents } from '../../contexts/EventProvider';
+
 const LiveEventTableCell = ({ event }) => {
 	const { competitors, scores, status } = event;
+	const { setSelectedEvent } = useEvents();
+
+	const handleClickEvent = () => setSelectedEvent(event);
 
 	const { name: homeTeamName } = competitors[0];
 	const { name: awayTeamName } = competitors[1];
@@ -19,7 +24,7 @@ const LiveEventTableCell = ({ event }) => {
 	const { live } = status;
 
 	return (
-		<CellContent data-testid='event-cell'>
+		<CellContent data-testid='event-cell' onClick={handleClickEvent}>
 			<CompetitorBox>
 				<SubRow>
 					<TeamNameText>{homeTeamName}</TeamNameText>

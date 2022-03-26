@@ -17,7 +17,11 @@ import {
 } from './eventPanel.styles';
 import displayData from './data';
 
-const EventPanel = ({ selectedEvent }) => {
+import { useEvents } from '../../contexts/EventProvider';
+
+const EventPanel = () => {
+	const { selectedEvent } = useEvents();
+
 	const EmptyData = () => {
 		return (
 			<EmptyDataText>{displayData['empty-data-message']}</EmptyDataText>

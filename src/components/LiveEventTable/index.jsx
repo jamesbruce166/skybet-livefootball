@@ -11,10 +11,14 @@ import {
 
 import displayData from './data.json';
 
-const LiveEventsTable = ({ events }) => {
-	const { data } = events;
+import { useEvents } from '../../contexts/EventProvider';
+
+const LiveEventsTable = () => {
+	const { events, error } = useEvents();
 
 	const LiveEventsRows = () => {
+		const { data } = events;
+
 		return data
 			.filter((e) => e.status.displayable)
 			.map((event) => {
@@ -37,7 +41,7 @@ const LiveEventsTable = ({ events }) => {
 	return (
 		<Section data-testid='event-table'>
 			<Container>
-				{data.length > 1 ? <LiveEventsRows /> : <EmptyTable />}
+				{events ? <LiveEventsRows /> : <EmptyTable />}
 			</Container>
 		</Section>
 	);
