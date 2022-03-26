@@ -13,3 +13,15 @@
 
 -   Following the instructions, I should use WebSocket.
 -   I was tempted to use Material-UI but feel if I fail to complete most of the tasks, I can try show some CSS skillset, plus MUI seems a little heavy for such a small set of components.
+
+---
+
+1. First, create the table of live events using the dummy data
+2. Create the side panel event data
+3. Create an odds toggle function to switch between fraction and decimal
+4. Connect the websocket to contexts and pass live event data to the table
+5. Make the cells clickable so that the selected event can be passed to the panel
+6. Dynamically load the markes and outcomes
+7. Filter data using the 'displayable' property
+8. Group live games by their 'linkedEventTypeName' in the table view
+9. Make use of the websocket subscriptions for live updates of an event
