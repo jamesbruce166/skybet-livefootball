@@ -106,7 +106,6 @@ export const Tab = styled.button`
 	border: none;
 	transition: 0.3s ease-in-out;
 
-	/* ${(props) => (props.active ? 'border-bottom: 0.5px solid #fff;' : '')} */
 	${(props) => (props.active ? 'font-size: 1rem;' : '')}
 	${(props) => (props.active ? 'margin: 0 0.6rem;' : '')}
     ${(props) => (props.active ? 'color: white;' : '')}
@@ -117,4 +116,11 @@ export const Content = styled.div`
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+`;
+
+export const EmptyDataText = styled.p`
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 500;
 `;
