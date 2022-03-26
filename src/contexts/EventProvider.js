@@ -15,8 +15,6 @@ export function useEvents() {
 
 export function EventProvider({ children }) {
 	const [selectedEvent, setSelectedEvent] = useState(undefined);
-	// const [outcomes, setOutcomes] = useState(undefined);
-	// const [markets, setMarkets] = useState(undefined);
 	const [events, setEvents] = useState(undefined);
 	const [error, setError] = useState(undefined);
 
@@ -27,7 +25,6 @@ export function EventProvider({ children }) {
 		const { type } = data;
 		switch (type) {
 			case 'LIVE_EVENTS_DATA':
-				console.log('event::' + data.data);
 				setEvents(data);
 				break;
 			case 'ERROR':
@@ -53,8 +50,6 @@ export function EventProvider({ children }) {
 		error,
 		selectedEvent,
 		setSelectedEvent,
-		// outcomes,
-		// markets,
 	};
 
 	return (
