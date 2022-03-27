@@ -20,22 +20,21 @@ import {
 	MinimiseIcon,
 	MaximiseIcon,
 	Clickable,
+	LinkedEventTypeName,
+	ControlBarLeft,
+	ControlBarRight,
 } from './eventPanel.styles';
 import MarketTabs from '../MarketTabs';
+import { useEvents } from '../../contexts/EventProvider';
+import { useDisplaySettings } from '../../contexts/DisplaySettingsProvider';
 
 import displayData from './data';
-import { useEvents } from '../../contexts/EventProvider';
 
 const EventPanel = () => {
-	const displayOptions = {
-		FRACTION: displayData['format-options'].fraction,
-		DECIMAL: displayData['format-options'].decimal,
-	};
-
-	const [oddsDisplay, setOddsDisplay] = useState(displayOptions.DECIMAL);
-	const [isMinimised, setIsMinimised] = useState(true);
-
 	const { selectedEvent } = useEvents();
+	const { oddsDisplay, setOddsDisplay, displayOptions } =
+		useDisplaySettings();
+	const [isMinimised, setIsMinimised] = useState(true);
 
 	const minimiseHandler = () => setIsMinimised(!isMinimised);
 	const radioChangeHandler = (e) => setOddsDisplay(e.value);
@@ -47,7 +46,7 @@ const EventPanel = () => {
 	};
 
 	const SelectedEventData = () => {
-		const { competitors, scores, startTime, markets } = selectedEvent;
+		const { competitors, scores, startTime, eventId } = selectedEvent;
 
 		const { name: homeTeamName } = competitors[0];
 		const { name: awayTeamName } = competitors[1];
@@ -75,9 +74,8 @@ const EventPanel = () => {
 				</GameBox>
 				{!isMinimised && (
 					<MarketTabs
-						markets={markets}
-						oddsDisplay={oddsDisplay}
 						displayOptions={displayOptions}
+						eventId={eventId}
 					/>
 				)}
 			</>
@@ -87,31 +85,40 @@ const EventPanel = () => {
 	return (
 		<Section data-testid='selected-event'>
 			<ControlBar>
-				<Menu menuButton={<MenuIcon />}>
-					<MenuHeader>Display Settings</MenuHeader>
-					<SubMenu label={displayData['menu-odds-label']}>
-						<MenuRadioGroup
-							value={oddsDisplay}
-							onRadioChange={radioChangeHandler}
-						>
-							<MenuItem
-								type='radio'
-								value={displayOptions.FRACTION}
+				<ControlBarLeft>
+					<LinkedEventTypeName>
+						{selectedEvent &&
+							(selectedEvent.linkedEventTypeName ??
+								'Football Live')}
+					</LinkedEventTypeName>
+				</ControlBarLeft>
+				<ControlBarRight>
+					<Menu menuButton={<MenuIcon />}>
+						<MenuHeader>Display Settings</MenuHeader>
+						<SubMenu label={displayData['menu-odds-label']}>
+							<MenuRadioGroup
+								value={oddsDisplay}
+								onRadioChange={radioChangeHandler}
 							>
-								{displayData['format-options'].fraction}
-							</MenuItem>
-							<MenuItem
-								type='radio'
-								value={displayOptions.DECIMAL}
-							>
-								{displayData['format-options'].decimal}
-							</MenuItem>
-						</MenuRadioGroup>
-					</SubMenu>
-				</Menu>
-				<Clickable onClick={minimiseHandler}>
-					{isMinimised ? <MinimiseIcon /> : <MaximiseIcon />}
-				</Clickable>
+								<MenuItem
+									type='radio'
+									value={displayOptions.FRACTION}
+								>
+									{displayData['format-options'].fraction}
+								</MenuItem>
+								<MenuItem
+									type='radio'
+									value={displayOptions.DECIMAL}
+								>
+									{displayData['format-options'].decimal}
+								</MenuItem>
+							</MenuRadioGroup>
+						</SubMenu>
+					</Menu>
+					<Clickable onClick={minimiseHandler}>
+						{isMinimised ? <MinimiseIcon /> : <MaximiseIcon />}
+					</Clickable>
+				</ControlBarRight>
 			</ControlBar>
 			{selectedEvent ? <SelectedEventData /> : <EmptyData />}
 		</Section>

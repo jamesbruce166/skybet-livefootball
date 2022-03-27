@@ -15,6 +15,13 @@ export const Section = styled.div`
 	top: 0;
 `;
 
+export const LinkedEventTypeName = styled.h2`
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 0;
+`;
+
 export const GameBox = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -68,9 +75,16 @@ export const EmptyDataText = styled.p`
 export const ControlBar = styled.div`
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 `;
+
+export const ControlBarRight = styled.div`
+	display: flex;
+	flex-direction: row;
+`;
+
+export const ControlBarLeft = styled.div``;
 
 const Icon = css`
 	color: white;
