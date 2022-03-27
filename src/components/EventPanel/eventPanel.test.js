@@ -24,7 +24,7 @@ function renderEventPanel(event) {
 		<DisplaySettingsContext.Provider
 			value={{ oddsDisplay, displayOptions }}
 		>
-			<SocketContext.Provider>
+			<SocketContext.Provider value={{}}>
 				<EventsContext.Provider value={{ selectedEvent: event }}>
 					<EventPanel />
 				</EventsContext.Provider>

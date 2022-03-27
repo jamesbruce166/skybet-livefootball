@@ -24,7 +24,7 @@ function renderLiveEventTable(events) {
 		<DisplaySettingsContext.Provider
 			value={{ oddsDisplay, displayOptions }}
 		>
-			<SocketContext.Provider>
+			<SocketContext.Provider value={{}}>
 				<EventsContext.Provider value={{ events }}>
 					<LiveEventTable />
 				</EventsContext.Provider>
