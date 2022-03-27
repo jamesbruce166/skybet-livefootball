@@ -26,16 +26,31 @@ export const MarketBadge = styled.button`
 		props.active == props.id ? 'white' : 'transparent'};
 `;
 
-export const OutcomeContainer = styled.div`
-	color: #fff;
-	width: 100%;
+export const OutcomeGroup = styled.div`
+	max-height: 40vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	border-bottom: 0.5px solid #aaa;
-	border-top: 0.5px solid #aaa;
-	p {
-		font-size: 0.9rem;
-	}
+	justify-content: center;
+	padding: 1rem 6rem;
+`;
+
+export const OutcomeRow = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+`;
+
+export const OutcomeName = styled.p`
+	color: white;
+	font-size: 1rem;
+	font-weight: 500;
+`;
+
+export const OutcomePrice = styled.p`
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
 `;
