@@ -4,10 +4,10 @@ import { Settings } from '@styled-icons/ionicons-sharp';
 import { Expand } from '@styled-icons/evaicons-solid';
 import { CloseFullscreen } from '@styled-icons/material-rounded';
 
-import { PRIMARY_RED } from '../../variables.styles';
+import { PRIMARY_PURPLE } from '../../variables.styles';
 
 export const Section = styled.div`
-	background: ${PRIMARY_RED};
+	background: ${PRIMARY_PURPLE};
 	min-height: 20vh;
 	padding: 3%;
 	position: -webkit-sticky;
