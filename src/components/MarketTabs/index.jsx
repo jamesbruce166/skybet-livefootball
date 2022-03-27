@@ -83,12 +83,20 @@ const MarketTabs = ({ eventId, displayOptions }) => {
 		};
 	}, [outcomeIds, socket, onMessage]);
 
+	const filterAndSortArray = (a) => {
+		return a
+			.filter(({ status }) => status.displayable)
+			.sort(
+				({ displayOrder: a }, { displayOrder: b }) => a - b // ascending order
+			);
+	};
+
 	const Outcomes = () => {
 		const { oddsDisplay } = useDisplaySettings();
 		return (
 			<OutcomeGroup>
 				{outcomes
-					? outcomes.map((outcome) => {
+					? filterAndSortArray(outcomes).map((outcome) => {
 							const { price, name, outcomeId } = outcome;
 							const { den, num, decimal } = price;
 							return (
@@ -112,26 +120,21 @@ const MarketTabs = ({ eventId, displayOptions }) => {
 			<ScrollContainer vertical={false}>
 				<BadgeGroup>
 					{markets ? (
-						markets
-							.sort(
-								({ displayOrder: a }, { displayOrder: b }) =>
-									a - b // ascending order
-							)
-							.map((market, idx) => {
-								return (
-									<MarketBadge
-										active={active}
-										id={idx}
-										onClick={() => {
-											handleClick(idx);
-											setOutcomeIds(market.outcomes);
-										}}
-										key={idx}
-									>
-										{market.name}
-									</MarketBadge>
-								);
-							})
+						filterAndSortArray(markets).map((market, idx) => {
+							return (
+								<MarketBadge
+									active={active}
+									id={idx}
+									onClick={() => {
+										handleClick(idx);
+										setOutcomeIds(market.outcomes);
+									}}
+									key={idx}
+								>
+									{market.name}
+								</MarketBadge>
+							);
+						})
 					) : (
 						<p>Loading...</p>
 					)}
