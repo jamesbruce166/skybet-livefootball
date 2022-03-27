@@ -1,6 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
-
 import {
 	Container,
 	MarketBadge,
@@ -12,8 +11,9 @@ import {
 } from './marketTabs.styles';
 
 import { useSocket } from '../../contexts/SocketProvider';
+import { useDisplaySettings } from '../../contexts/DisplaySettingsProvider';
 
-const MarketTabs = ({ eventId, oddsDisplay, displayOptions }) => {
+const MarketTabs = ({ eventId, displayOptions }) => {
 	const [marketIds, setMarketIds] = useState([]);
 	const [outcomeIds, setOutcomeIds] = useState([]);
 	const [outcomes, setOutcomes] = useState([]);
@@ -83,6 +83,30 @@ const MarketTabs = ({ eventId, oddsDisplay, displayOptions }) => {
 		};
 	}, [outcomeIds, socket, onMessage]);
 
+	const Outcomes = () => {
+		const { oddsDisplay } = useDisplaySettings();
+		return (
+			<OutcomeGroup>
+				{outcomes
+					? outcomes.map((outcome) => {
+							const { price, name, outcomeId } = outcome;
+							const { den, num, decimal } = price;
+							return (
+								<OutcomeRow key={outcomeId}>
+									<OutcomeName>{name}</OutcomeName>
+									<OutcomePrice>
+										{oddsDisplay == displayOptions.DECIMAL
+											? `${decimal}`
+											: `${num}/${den}`}
+									</OutcomePrice>
+								</OutcomeRow>
+							);
+					  })
+					: null}
+			</OutcomeGroup>
+		);
+	};
+
 	return (
 		<Container>
 			<ScrollContainer vertical={false}>
@@ -109,25 +133,7 @@ const MarketTabs = ({ eventId, oddsDisplay, displayOptions }) => {
 				</BadgeGroup>
 			</ScrollContainer>
 			<ScrollContainer horizontal={false}>
-				<OutcomeGroup>
-					{outcomes
-						? outcomes.map((outcome) => {
-								const { price, name } = outcome;
-								const { den, num, decimal } = price;
-								return (
-									<OutcomeRow>
-										<OutcomeName>{name}</OutcomeName>
-										<OutcomePrice>
-											{oddsDisplay ==
-											displayOptions.DECIMAL
-												? `${decimal}`
-												: `${num}/${den}`}
-										</OutcomePrice>
-									</OutcomeRow>
-								);
-						  })
-						: null}
-				</OutcomeGroup>
+				<Outcomes />
 			</ScrollContainer>
 		</Container>
 	);
