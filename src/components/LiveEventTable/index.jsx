@@ -14,7 +14,7 @@ import displayData from './data.json';
 import { useEvents } from '../../contexts/EventProvider';
 
 const LiveEventsTable = () => {
-	const { events, error } = useEvents();
+	const { events } = useEvents();
 
 	const LiveEventsRows = () => {
 		const { data } = events;

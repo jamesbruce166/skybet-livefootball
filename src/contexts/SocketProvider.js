@@ -15,7 +15,10 @@ export function SocketProvider({ id, children }) {
 
 		ws.current.addEventListener('open', () => {
 			ws.current.send(
-				JSON.stringify({ type: 'getLiveEvents', primaryMarkets: true })
+				JSON.stringify({
+					type: 'getLiveEvents',
+					primaryMarkets: true,
+				})
 			);
 		});
 		setSocket(ws.current);

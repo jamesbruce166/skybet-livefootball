@@ -5,6 +5,8 @@ import React, {
 	createContext,
 	useEffect,
 } from 'react';
+import { useErrorHandler } from 'react-error-boundary';
+
 import { useSocket } from './SocketProvider';
 
 const EventsContext = createContext();
@@ -16,7 +18,7 @@ export function useEvents() {
 export function EventProvider({ children }) {
 	const [selectedEvent, setSelectedEvent] = useState(undefined);
 	const [events, setEvents] = useState(undefined);
-	const [error, setError] = useState(undefined);
+	const handleError = useErrorHandler();
 
 	const { socket } = useSocket();
 
@@ -31,7 +33,7 @@ export function EventProvider({ children }) {
 				setSelectedEvent(firstGame);
 				break;
 			case 'ERROR':
-				setError(data);
+				handleError(data);
 				break;
 			default:
 				break;
@@ -50,7 +52,6 @@ export function EventProvider({ children }) {
 
 	const value = {
 		events,
-		error,
 		selectedEvent,
 		setSelectedEvent,
 	};
