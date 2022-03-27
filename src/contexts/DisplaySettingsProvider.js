@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 
-const DisplaySettingsContext = React.createContext();
+export const DisplaySettingsContext = React.createContext();
 
 export function useDisplaySettings() {
 	return useContext(DisplaySettingsContext);

@@ -66,7 +66,12 @@ const LiveEventsTable = () => {
 	return (
 		<Section data-testid='event-table'>
 			<Container>
-				{events ? <LiveEventsRows /> : <EmptyTable />}
+				{events &&
+					(events.data?.length > 0 ? (
+						<LiveEventsRows />
+					) : (
+						<EmptyTable />
+					))}
 			</Container>
 		</Section>
 	);

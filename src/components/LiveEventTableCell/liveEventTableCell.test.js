@@ -2,6 +2,10 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen, cleanup } from '@testing-library/react';
 
+import { EventsContext } from '../../contexts/EventProvider';
+import { SocketContext } from '../../contexts/SocketProvider';
+import { DisplaySettingsContext } from '../../contexts/DisplaySettingsProvider';
+
 import LiveEventTableCell from './index';
 import mockEvent from './__mocks__/liveEvent.json';
 
@@ -9,15 +13,32 @@ afterEach(() => {
 	cleanup();
 });
 
+function renderLiveEventTableCell(event) {
+	const displayOptions = {
+		FRACTION: 'decimal',
+		DECIMAL: 'fraction',
+	};
+	const oddsDisplay = displayOptions.DECIMAL;
+	return (
+		<DisplaySettingsContext.Provider
+			value={{ oddsDisplay, displayOptions }}
+		>
+			<SocketContext.Provider>
+				<EventsContext.Provider value={{ setSelectedEvent: () => {} }}>
+					<LiveEventTableCell event={event} />
+				</EventsContext.Provider>
+			</SocketContext.Provider>
+		</DisplaySettingsContext.Provider>
+	);
+}
+
 test('renders correctly', () => {
-	const tree = renderer
-		.create(<LiveEventTableCell event={mockEvent} />)
-		.toJSON();
+	const tree = renderer.create(renderLiveEventTableCell(mockEvent)).toJSON();
 	expect(tree).toMatchSnapshot();
 });
 
 test('should display home team name', () => {
-	render(<LiveEventTableCell event={mockEvent} />);
+	render(renderLiveEventTableCell(mockEvent));
 	const eventCell = screen.queryByTestId('event-cell');
 
 	expect(eventCell).toBeInTheDocument();
@@ -25,7 +46,7 @@ test('should display home team name', () => {
 });
 
 test('should display away team name', () => {
-	render(<LiveEventTableCell event={mockEvent} />);
+	render(renderLiveEventTableCell(mockEvent));
 	const eventCell = screen.queryByTestId('event-cell');
 
 	expect(eventCell).toBeInTheDocument();
@@ -33,7 +54,7 @@ test('should display away team name', () => {
 });
 
 test('should display home team score', () => {
-	render(<LiveEventTableCell event={mockEvent} />);
+	render(renderLiveEventTableCell(mockEvent));
 	const eventCell = screen.queryByTestId('event-cell');
 
 	expect(eventCell).toBeInTheDocument();
@@ -41,7 +62,7 @@ test('should display home team score', () => {
 });
 
 test('should display away team score', () => {
-	render(<LiveEventTableCell event={mockEvent} />);
+	render(renderLiveEventTableCell(mockEvent));
 	const eventCell = screen.queryByTestId('event-cell');
 
 	expect(eventCell).toBeInTheDocument();
@@ -49,7 +70,7 @@ test('should display away team score', () => {
 });
 
 test('should display is live', () => {
-	render(<LiveEventTableCell event={mockEvent} />);
+	render(renderLiveEventTableCell(mockEvent));
 	const eventCell = screen.queryByTestId('event-cell');
 
 	expect(eventCell).toBeInTheDocument();
@@ -58,7 +79,7 @@ test('should display is live', () => {
 
 test('should hide live status when finished', () => {
 	mockEvent.status.live = false;
-	render(<LiveEventTableCell event={mockEvent} />);
+	render(renderLiveEventTableCell(mockEvent));
 
 	mockEvent.status.live = true;
 	const eventCell = screen.queryByTestId('event-cell');

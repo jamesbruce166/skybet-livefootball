@@ -2,8 +2,9 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bczRLJ kyfMpH"
+  className="sc-bczRLJ cqpXMw"
   data-testid="event-cell"
+  onClick={[Function]}
 >
   <div
     className="sc-gsnTZi jfffIx"
@@ -12,12 +13,12 @@ exports[`renders correctly 1`] = `
       className="sc-dkzDqf caZALy"
     >
       <p
-        className="sc-hKMtZM cGURqS"
+        className="sc-hKMtZM bcXSRW"
       >
         Shanghai Shenhua
       </p>
       <p
-        className="sc-eCYdqJ bSsXdt"
+        className="sc-eCYdqJ inrNUh"
       >
         0
       </p>
@@ -26,12 +27,12 @@ exports[`renders correctly 1`] = `
       className="sc-dkzDqf caZALy"
     >
       <p
-        className="sc-hKMtZM cGURqS"
+        className="sc-hKMtZM bcXSRW"
       >
         Shandong Luneng Taishan
       </p>
       <p
-        className="sc-eCYdqJ bSsXdt"
+        className="sc-eCYdqJ inrNUh"
       >
         0
       </p>
@@ -41,7 +42,7 @@ exports[`renders correctly 1`] = `
     className="sc-jSMfEi fnIhHY"
   >
     <div
-      className="sc-iBkjds leGKiQ"
+      className="sc-iBkjds gvCYMO"
     >
       LIVE
     </div>

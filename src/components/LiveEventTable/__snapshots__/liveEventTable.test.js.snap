@@ -2,128 +2,144 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="sc-ftvSup fDOnoU"
+  className="sc-jqUVSM cAZte"
   data-testid="event-table"
 >
   <div
-    className="sc-papXJ bSmiBp"
+    className="sc-kDDrLX kROlXX"
   >
-    <div
-      className="sc-bczRLJ cqpXMw"
-      data-testid="event-cell"
-    >
+    <div>
+      <h2
+        className="sc-breuTD cKdPDa"
+      >
+        Chinese Super League
+      </h2>
       <div
-        className="sc-gsnTZi jfffIx"
+        className="sc-bczRLJ cqpXMw"
+        data-testid="event-cell"
+        onClick={[Function]}
       >
         <div
-          className="sc-dkzDqf caZALy"
+          className="sc-gsnTZi jfffIx"
         >
-          <p
-            className="sc-hKMtZM cGURqS"
+          <div
+            className="sc-dkzDqf caZALy"
           >
-            Shanghai Shenhua
-          </p>
-          <p
-            className="sc-eCYdqJ bSsXdt"
+            <p
+              className="sc-hKMtZM bcXSRW"
+            >
+              Shanghai Shenhua
+            </p>
+            <p
+              className="sc-eCYdqJ inrNUh"
+            >
+              0
+            </p>
+          </div>
+          <div
+            className="sc-dkzDqf caZALy"
           >
-            0
-          </p>
+            <p
+              className="sc-hKMtZM bcXSRW"
+            >
+              Shandong Luneng Taishan
+            </p>
+            <p
+              className="sc-eCYdqJ inrNUh"
+            >
+              0
+            </p>
+          </div>
         </div>
         <div
-          className="sc-dkzDqf caZALy"
+          className="sc-jSMfEi fnIhHY"
         >
-          <p
-            className="sc-hKMtZM cGURqS"
+          <div
+            className="sc-iBkjds gvCYMO"
           >
-            Shandong Luneng Taishan
-          </p>
-          <p
-            className="sc-eCYdqJ bSsXdt"
+            LIVE
+          </div>
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 lbJwfL sc-gKXOVf clsDmZ"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            0
-          </p>
+            <path
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              fillRule="evenodd"
+            />
+          </svg>
         </div>
-      </div>
-      <div
-        className="sc-jSMfEi fnIhHY"
-      >
-        <div
-          className="sc-iBkjds leGKiQ"
-        >
-          LIVE
-        </div>
-        <svg
-          aria-hidden="true"
-          className="StyledIconBase-ea9ulj-0 lbJwfL sc-gKXOVf clsDmZ"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            fillRule="evenodd"
-          />
-        </svg>
       </div>
     </div>
-    <div
-      className="sc-bczRLJ cqpXMw"
-      data-testid="event-cell"
-    >
+    <div>
+      <h2
+        className="sc-breuTD cKdPDa"
+      >
+        Singapore S League
+      </h2>
       <div
-        className="sc-gsnTZi jfffIx"
+        className="sc-bczRLJ cqpXMw"
+        data-testid="event-cell"
+        onClick={[Function]}
       >
         <div
-          className="sc-dkzDqf caZALy"
+          className="sc-gsnTZi jfffIx"
         >
-          <p
-            className="sc-hKMtZM cGURqS"
+          <div
+            className="sc-dkzDqf caZALy"
           >
-            Home United
-          </p>
-          <p
-            className="sc-eCYdqJ bSsXdt"
+            <p
+              className="sc-hKMtZM bcXSRW"
+            >
+              Home United
+            </p>
+            <p
+              className="sc-eCYdqJ inrNUh"
+            >
+              0
+            </p>
+          </div>
+          <div
+            className="sc-dkzDqf caZALy"
           >
-            0
-          </p>
+            <p
+              className="sc-hKMtZM bcXSRW"
+            >
+              Albirex Niigata FC
+            </p>
+            <p
+              className="sc-eCYdqJ inrNUh"
+            >
+              1
+            </p>
+          </div>
         </div>
         <div
-          className="sc-dkzDqf caZALy"
+          className="sc-jSMfEi fnIhHY"
         >
-          <p
-            className="sc-hKMtZM cGURqS"
+          <div
+            className="sc-iBkjds gvCYMO"
           >
-            Albirex Niigata FC
-          </p>
-          <p
-            className="sc-eCYdqJ bSsXdt"
+            LIVE
+          </div>
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 lbJwfL sc-gKXOVf clsDmZ"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            1
-          </p>
+            <path
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              fillRule="evenodd"
+            />
+          </svg>
         </div>
-      </div>
-      <div
-        className="sc-jSMfEi fnIhHY"
-      >
-        <div
-          className="sc-iBkjds leGKiQ"
-        >
-          LIVE
-        </div>
-        <svg
-          aria-hidden="true"
-          className="StyledIconBase-ea9ulj-0 lbJwfL sc-gKXOVf clsDmZ"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            fillRule="evenodd"
-          />
-        </svg>
       </div>
     </div>
   </div>

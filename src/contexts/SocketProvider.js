@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState, useRef } from 'react';
 
-const SocketContext = React.createContext();
+export const SocketContext = React.createContext();
 
 export function useSocket() {
 	return useContext(SocketContext);

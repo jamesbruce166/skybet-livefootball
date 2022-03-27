@@ -9,7 +9,7 @@ import { useErrorHandler } from 'react-error-boundary';
 
 import { useSocket } from './SocketProvider';
 
-const EventsContext = createContext();
+export const EventsContext = createContext();
 
 export function useEvents() {
 	return useContext(EventsContext);
