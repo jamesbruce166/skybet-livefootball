@@ -112,21 +112,26 @@ const MarketTabs = ({ eventId, displayOptions }) => {
 			<ScrollContainer vertical={false}>
 				<BadgeGroup>
 					{markets ? (
-						markets.map((market, idx) => {
-							return (
-								<MarketBadge
-									active={active}
-									id={idx}
-									onClick={() => {
-										handleClick(idx);
-										setOutcomeIds(market.outcomes);
-									}}
-									key={idx}
-								>
-									{market.name}
-								</MarketBadge>
-							);
-						})
+						markets
+							.sort(
+								({ displayOrder: a }, { displayOrder: b }) =>
+									a - b // ascending order
+							)
+							.map((market, idx) => {
+								return (
+									<MarketBadge
+										active={active}
+										id={idx}
+										onClick={() => {
+											handleClick(idx);
+											setOutcomeIds(market.outcomes);
+										}}
+										key={idx}
+									>
+										{market.name}
+									</MarketBadge>
+								);
+							})
 					) : (
 						<p>Loading...</p>
 					)}
