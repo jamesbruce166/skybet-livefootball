@@ -32,12 +32,13 @@ export const OutcomeGroup = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 1rem 6rem;
+	padding: 1rem 10rem;
 `;
 
 export const OutcomeRow = styled.div`
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
