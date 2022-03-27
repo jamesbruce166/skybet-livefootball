@@ -4,7 +4,7 @@ import { Football } from '@styled-icons/ionicons-outline';
 
 export const Section = styled.section`
 	display: flex;
-	min-height: 100vh;
+	min-height: 30vh;
 	justify-content: center;
 	align-items: center;
 	padding: 5%;
