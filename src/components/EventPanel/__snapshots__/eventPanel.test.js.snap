@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bczRLJ bhMxDI"
+  className="sc-bczRLJ iPdWhh"
   data-testid="selected-event"
 >
   <div
