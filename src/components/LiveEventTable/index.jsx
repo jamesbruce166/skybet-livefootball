@@ -7,6 +7,7 @@ import {
 	EmptyTableIcon,
 	EmptyTableCard,
 	EmptyTableMessage,
+	EventTypeTitle,
 } from './liveEventTable.styles';
 
 import displayData from './data.json';
@@ -18,13 +19,37 @@ const LiveEventsTable = () => {
 
 	const LiveEventsRows = () => {
 		const { data } = events;
+		const groups = data.reduce(
+			(groups, event) => ({
+				...groups,
+				[event.linkedEventTypeName ?? event.typeName]: [
+					...(groups[event.linkedEventTypeName ?? event.typeName] ||
+						[]),
+					event,
+				],
+			}),
+			{}
+		);
 
-		return data
-			.filter((e) => e.status.displayable)
-			.map((event) => {
-				const { eventId } = event;
-				return <LiveEventTableCell key={eventId} event={event} />;
-			});
+		const eventTypes = Object.keys(groups);
+		return eventTypes.map((type, idx) => {
+			return (
+				<div key={idx}>
+					<EventTypeTitle key={idx}>{type}</EventTypeTitle>
+					{groups[type]
+						.filter((e) => e.status.displayable)
+						.map((event) => {
+							const { eventId } = event;
+							return (
+								<LiveEventTableCell
+									key={eventId}
+									event={event}
+								/>
+							);
+						})}
+				</div>
+			);
+		});
 	};
 
 	const EmptyTable = () => {

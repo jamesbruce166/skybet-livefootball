@@ -36,3 +36,9 @@ export const EmptyTableMessage = styled.p`
 	font-weight: 100;
 	text-align: center;
 `;
+
+export const EventTypeTitle = styled.h2`
+	color: lightgray;
+	font-size: 1rem;
+	font-weight: 700;
+`;
