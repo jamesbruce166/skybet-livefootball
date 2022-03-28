@@ -55,10 +55,24 @@ Or the following docker run command:
 docker run -it --rm --name sbg-tech-test-api -p 8888-8890:8888-8890 sbgtechtest/api:2.0.0
 ```
 
-Once running, install the relevant packages:
+Ensure you are in the directory of the cloned web app:
+
+```bash
+cd <repo>
+```
+
+Install the relevant packages:
 
 ```bash
 npm i
+```
+
+Then configure your environment variable by creating a `.env` file with the following content:
+
+**Be sure to replace the URL with the URL and port of your websocket**
+
+```bash
+echo "REACT_APP_SOCKET_URL=<URL>" > .env
 ```
 
 Then run the application with:
