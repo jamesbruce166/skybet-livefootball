@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+-   [Choice of Tools](#choiceoftools)
 -   [How To Run](#howtorun)
     -   [Starting the app](#startingtheapp)
     -   [Running the tests](#runningthetests)
@@ -15,6 +16,21 @@
     -   [Task Two](#tasktwo)
     -   [Task Three](#taskthree)
 -   [Future Features](#futurefeatures)
+
+## <a name="choiceoftools"></a> Choice of Tools
+
+For this app, I originally chose redux due the constant live changing data, using the stream api in `redux-toolkit`, but felt redux was overkill and then switched to reatc contexts using a single page app.
+
+I planned to use `NextJS` but decided to avoid to whole redux + SSR integration and stick with `create-react-app`, despite never ending up using Redux, oh well :).
+
+I figured that while `TailwindCSS` or `MUI` would give me that easy design and native responsiveness, I decided to use `styled-components` for the flexibilty in custom components and lightweight touch.
+
+Having used Websockets no where near as much as REST API's, I felt this would be trickiest thing for me to manage in a clean way, but sticking it in a context turned out pretty well, so I decided to combine this with the `react-error-boundary` package, which gave me a nice fallback mechanism on weird errors not just with the websocket, but with the app in general.
+
+I did not want UX ruined by use of `react-error-boundary` each time a network issue happened with the websocket, so for the most part, a bit of standard checking for empty or undefined objects
+allows some conditional rendering for managing empty data, which you can see in some of the screen shots below.
+
+For the testing framework, I stuck with `Jest` & `react-testing-library`, included are some snapchot tests and basic component tests.
 
 ## <a name="howtorun"></a> How To Run
 
